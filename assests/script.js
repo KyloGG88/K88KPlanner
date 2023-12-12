@@ -62,7 +62,7 @@ $(function () {
       localStorage.setItem(i, eventThisHour);
       saveIcon.addClass("fa-solid fa-check");
       document.getElementById('alrt').innerHTML='<b>Your Schedule has been updated! (Saved to Local Storage)</b>'; 
-      setTimeout(function() {document.getElementById('alrt').innerHTML='';},5000);
+      setTimeout(function() {document.getElementById('alrt').innerHTML='';},2000);
     });
 
     // have timeblock colors correspond to past,     present, future
