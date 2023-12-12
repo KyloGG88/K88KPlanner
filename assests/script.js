@@ -66,7 +66,7 @@ $(function () {
       setTimeout(function() {
         let alert = $("#alert");
         alert.text("Your Schedule has been updated! (Saved to Local Storage)");
-          // .format({ 'text-align': 'center', 'text-weight': 'bold' });
+            // .format({ 'text-align': 'center', 'text-weight': 'bold' });
         alert.fadeOut();
       }, 2000);
     });
