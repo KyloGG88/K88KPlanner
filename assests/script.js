@@ -57,13 +57,24 @@ $(function () {
         
         
     //saving timeblock text in local storage
+
+    
     saveButton.on("click", function () {
       let eventThisHour = textContainer.val();
       localStorage.setItem(i, eventThisHour);
       saveIcon.addClass("fa-solid fa-check");
-      document.getElementById('alrt').innerHTML='<b>Your Schedule has been updated! (Saved to Local Storage)</b>'; 
-      setTimeout(function() {document.getElementById('alrt').innerHTML='';},2000);
+      setTimeout(function() {
+        let alert = $("#alert");
+        alert.text("Your Schedule has been updated! (Saved to Local Storage)");
+          // .format({ 'text-align': 'center', 'text-weight': 'bold' });
+        alert.fadeOut();
+      }, 2000);
     });
+
+    // Original timeout code
+    // document.getElementById('alrt').innerHTML='<b>Please wait, Your download will start soon!!!</b>'; 
+    // setTimeout(function() {document.getElementById('alrt').innerHTML='';},5000);
+    // <div id='alrt' style="fontWeight = 'bold'"></div>
 
     // have timeblock colors correspond to past,     present, future
     // get current time hour via dayjs
