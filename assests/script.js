@@ -28,5 +28,15 @@ $(function () {
     saveButton.addClass("saveBtn col-1");
 
     mainContainer.append(hoursRow);
+
+    // loop over all the timeblocks and get the current value of the textarea
+    // decide how you want to store the text for each hour in local storage
+    // potential options:
+        // can either store each individual hour as its own key 
+        // (e.g. in local storage, hour-9: "something") 
+        // or store an array objects for each timeblock 
+        // (e.g. [{hour-9: "foo", hour-10: "bar"}])
+
+
   };
 };
