@@ -64,5 +64,27 @@ $(function () {
       document.getElementById('alrt').innerHTML='<b>Your Schedule has been updated! (Saved to Local Storage)</b>'; 
       setTimeout(function() {document.getElementById('alrt').innerHTML='';},5000);
     });
+
+    // have timeblock colors correspond to past,     present, future
+    // get current time hour via dayjs
+    // loop over all the timeblocks, conditionally assign past present or future class (see css) by comparing that timeblock's hour to  the current hour
+    let currentHour = dayjs().format("H");
+    // console.log(currentHour);
+      
+    if (i < currentHour) {
+    textContainer.addClass("past");
+  } else if (i == currentHour) {
+    textContainer.addClass("present");
+  } else {
+    textContainer.addClass("future");
+  }
+
+  $(function () {
+    let whatEvent = localStorage.getItem(i);
+    textContainer.append(whatEvent);
+  });
+    
   };
 });
+
+//End of Code
