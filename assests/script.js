@@ -51,5 +51,18 @@ $(function () {
         saveButton.append(saveIcon);
         hoursRow.append(saveButton);
 
+    // retrieve the save values from local storage and display them inside each timeblock whenever the page reloads
+    // method depends on how you stored in local storage:
+        // if you stored as individual keys, get each hour value from local storage and display in the corresponding textarea
+        
+        
+    //saving timeblock text in local storage
+    saveButton.on("click", function () {
+      let eventThisHour = textContainer.val();
+      localStorage.setItem(i, eventThisHour);
+      saveIcon.addClass("fa-solid fa-check");
+      document.getElementById('alrt').innerHTML='<b>Your Schedule has been updated! (Saved to Local Storage)</b>'; 
+      setTimeout(function() {document.getElementById('alrt').innerHTML='';},5000);
+    });
   };
 });
