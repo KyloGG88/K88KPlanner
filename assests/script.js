@@ -37,6 +37,19 @@ $(function () {
         // or store an array objects for each timeblock 
         // (e.g. [{hour-9: "foo", hour-10: "bar"}])
 
+        if (i < 12) {
+          hour.text(i + "AM");
+        } else if (i === 12) {
+          hour.text(i + "PM");
+        } else {
+          hour.text(i - 12 + "PM");
+        }
+        hoursRow.append(hour);
+    
+        hoursRow.append(textContainer);
+    
+        saveButton.append(saveIcon);
+        hoursRow.append(saveButton);
 
   };
-};
+});
