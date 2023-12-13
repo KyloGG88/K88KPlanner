@@ -1,4 +1,4 @@
-// Display the current time in Jumbotron
+// Display the current date & time in Jumbotron
 const dayView = $('#currentDay');
 const today = dayjs().format('dddd, MMMM DD YYYY HH:mm:ss'); // Added year and time because I prefer it 
 
