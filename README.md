@@ -30,26 +30,14 @@ GitPages link: [K88KPlanner](https://kylogg88.github.io/K88KPlanner/)
 
 Here are screenshots of my work: (screenshots must be updated)
 
-Start of Quiz
-![](images/Start.jpg)
+Schedule Planner layout
+![](images/Scheduler.jpg)
 
-Clicking the start button begins quiz       
-![](images/Question.jpg)
+Save Button records data      
+![](images/Save.jpg)
 
-"Correct" feedback 
-![](images/Right.jpg)
-
-"Wrong" feedback 
-![](images/Wrong.jpg)
-
-End of Quiz, Time is saved as Highscore & Request for Initials
-![](images/End.jpg)
-
-Score saved to Highscores
-![](images/Highscores.jpg)
-
-Highscores cleared using "Clear Highscores" buttton
-![](images/Highscores_cleared.jpg)
+Data saved to Local Storage
+![](images/LocalStorage.jpg)
 
 # Resources
 
