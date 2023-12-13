@@ -67,7 +67,7 @@ $(function () {
         let alert = $("#alert");
         alert.text("Your Schedule has been updated! (Saved to Local Storage)");
             // .format({ 'text-align': 'center', 'text-weight': 'bold' });
-        alert.fadeOut();
+        alert.fadeOut(); // After testing the alert the next day, the alert does not appear on click but on fade out????
       }, 5000);
     });
 
