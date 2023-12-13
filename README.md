@@ -2,23 +2,25 @@
 # Module 7 Challenge: Schedule Planner
 
 # Expected Result
+The following animation demonstrates the application functionality:
 ![](images/05-third-party-apis-homework-demo.gif)
 
 ## Requirements
 
-Create a code quiz that contains the following requirements:
+The app should:
 
-* A start button that when clicked a timer starts and the first question appears.
+* Display the current day at the top of the calender when a user opens the planner.
  
-  * Questions contain buttons for each answer.
-  * 
-  * When answer is clicked, the next question appears
-  * 
-  * If the answer clicked was incorrect then subtract time from the clock
+* Present timeblocks for standard business hours when the user scrolls down.
+ 
+* Color-code each timeblock based on past, present, and future when the timeblock is viewed.
+ 
+* Allow a user to enter an event when they click a timeblock
 
-* The quiz should end when all questions are answered or the timer reaches 0.
+* Save the event in local storage when the save button is clicked in that timeblock.
 
-* When the game ends, it should display their score and give the user the ability to save their initials and their score
+* Persist events between refreshes of a page
+
 
 ## My Work
 
@@ -51,14 +53,22 @@ Highscores cleared using "Clear Highscores" buttton
 
 # Resources
 
-***Javascript.INFO***
-*     https://javascript.info/
+***Days Js***
+*     https://day.js.org/docs/en/display/format
+***Zet Code***
+*     https://zetcode.com/javascript/dayjs/
+***MDN Web Docs***
+*     https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem
+***CodingNinjas***
+*     https://www.codingninjas.com/studio/library/settimeout-jquery
+***Log Rocket***
+*     https://blog.logrocket.com/storing-retrieving-javascript-objects-localstorage/
 ***Stack Overflow***
+*       https://stackoverflow.com/questions/74433492/how-can-i-display-the-date-and-time-in-dayjs-12hours-clock-using-dayjs
+*       https://stackoverflow.com/questions/26887393/how-to-do-time-check-in-jquery
+*       https://stackoverflow.com/questions/67700374/use-localstorage-getitem-with-typescript
 *       https://stackoverflow.com/questions/1962861/javascript-alert-box-with-timer
-***Various Videos - Creating a Quiz in Javascript - YOUTUBE***
-*       https://www.youtube.com/watch?v=f4fB9Xg2JEY
-*       https://www.youtube.com/watch?v=LQGTb112N_c
-*       https://www.youtube.com/watch?v=4piMZDO5IOI
+*       https://stackoverflow.com/questions/16086201/jquery-changing-style-of-html-element
 
 # License
 
