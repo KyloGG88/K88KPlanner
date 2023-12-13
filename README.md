@@ -30,13 +30,16 @@ GitPages link: [K88KPlanner](https://kylogg88.github.io/K88KPlanner/)
 
 Here are screenshots of my work: (screenshots must be updated)
 
-Schedule Planner layout
+* Schedule Planner layout
+
 ![](images/Scheduler.jpg)
 
-Save Button records data      
-![](images/Save.jpg)
+* Save Button records data      
 
-Data saved to Local Storage
+![](images/Saved.jpg)
+
+* Data saved to Local Storage
+
 ![](images/LocalStorage.jpg)
 
 # Resources
