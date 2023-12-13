@@ -51,10 +51,7 @@ $(function () {
         saveButton.append(saveIcon);
         hoursRow.append(saveButton);
 
-    // retrieve the save values from local storage and display them inside each timeblock whenever the page reloads
-    // method depends on how you stored in local storage:
-        // if you stored as individual keys, get each hour value from local storage and display in the corresponding textarea
-        
+            
         
     //saving timeblock text in local storage
 
@@ -90,6 +87,10 @@ $(function () {
     textContainer.addClass("future");
   }
 
+    // retrieve the save values from local storage and display them inside each timeblock whenever the page reloads
+    // method depends on how you stored in local storage:
+        // if you stored as individual keys, get each hour value from local storage and display in the corresponding textarea
+    
   $(function () {
     let whatEvent = localStorage.getItem(i);
     textContainer.append(whatEvent);
